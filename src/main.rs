@@ -10,7 +10,8 @@ fn main() {
     });
 
     if let Err(err) = lego::run(config) {
-        println!("Error: {}", err);
+        eprintln!("Application error: {}", err);
+
         process::exit(1);
     }
 }
